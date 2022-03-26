@@ -1,19 +1,9 @@
-# santo-pan
+# Repositorio para Santo Pan 🍰 
+## LaunchX : Mision-Frontend 💻 🚀
 
-## Project setup
-```
-npm install
-```
+Práctica para el tema de HTML de la misión Front End de Launch X.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Es una pastelería que ofrece a sus clientes la posibilidad de crear su propio pastel en base a las opciones mostradas.
+De igual manera, muestra al panadero los pedidos y la cantidad de ingredientes que le restan.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<sub><sup>Este proyecto fue creado con VueJs.</sup></sup>
