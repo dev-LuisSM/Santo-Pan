@@ -1,29 +1,49 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <header>
+    <img src="./assets/santo-pan/logo-blanco.png" alt="Santo Pan Logo">
+    <nav>
+      <router-link to="/">Inicio</router-link>
+      <router-link to="/">Sobre nosotros</router-link>
+      <router-link to="/">Nuestros productos</router-link>
+      <router-link to="/">Crear pastel</router-link>
+      <router-link to="/">Contacto</router-link>
+    </nav>
+  </header>
   <router-view/>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+header {
+  width: 100%;
+  padding: 1rem;
 
-nav {
-  padding: 30px;
+  position: absolute;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: small;
+  
+  nav > a{
+    padding: 0 1rem;
 
-    &.router-link-exact-active {
-      color: #42b983;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+    &::after{
+      content: '';
+      width: 0px;
+      height: 1px;
+      display: block;
+      background: rgb(255, 255, 255);
+      transition: 300ms;
+    }
+
+    &:hover::after{
+        width: 100%;
     }
   }
 }
